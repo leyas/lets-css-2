@@ -1,0 +1,13 @@
+/*light blue: #85cadd;*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: content-box;
+}
+
+
+body {
+    background-color: #85cadd;
+}
