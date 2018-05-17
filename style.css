@@ -91,6 +91,11 @@ body {
   left: 600px;
 }
 
+/* drugie drzewo */
+.drzewo.trzecie {
+  left: 1010px;
+}
+
 /* palac */
 .palac {
   position: absolute;
@@ -162,15 +167,24 @@ body {
   position: absolute;
   left: 1100px;
   bottom: 50px;
-  background-color: lightgrey;
+}
+
+.domek.drugi {
+  left: 1170px;
+  height: 90px;
+}
+
+.domek.drugi .sciana{
+  height: 52px;
 }
 
 .dach {
   width: 0;
   height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-bottom: 5px solid black;
+  border-left: 32px solid transparent;
+  border-right: 32px solid transparent;
+  border-bottom: 32px solid #4a4a49;
+  margin-left: -3px;
 }
 
 .sciana {
@@ -215,31 +229,18 @@ body {
 }
 
 .krzywy_domek .front:before {
-    content: ' ';
-    width: 96px;
-    height: 40px;
-    position: absolute;
-    top: -24px;
-    right: 2px;
-    transform: rotate(26deg);
-    background-color: lightgrey;
-    border-top: 4px solid #4a4a49;
+  content: ' ';
+  width: 89px;
+  height: 38px;
+  position: absolute;
+  top: -25px;
+  right: 0px;
+  transform: rotate(-332deg);
+  background-color: lightgrey;
+  border-top: 4px solid #4a4a49;
 }
-/*
-.krzywy_domek .front:after {
-    content: ' ';
-    width: 70px;
-    height: 415px;
-    position: absolute;
-    top: -43px;
-    left: -45px;
-    transform: skew(10deg);
-    background-color: lightgrey;
-    border: 4px solid #4a4a49;
-    border-right: 0;
-} */
 
-/* .krzywy_domek:after {
+.krzywy_domek:after {
     content: '';
     background-color: #c1272d;
     width: 4px;
@@ -252,39 +253,31 @@ body {
     background: linear-gradient(258deg, #e84331, #e87b31, #e8c431, #18b44e, #20a9d2, #2420d2, #d22020, #c1272d, #c1272d, #c1272d);
     background-size: 100% 800%;
     animation: gradient-animation 9s ease infinite;
-} */
+}
 
-/* @keyframes gradient-animation {
+@keyframes gradient-animation {
   0%{background-position:0% 34%}
   50%{background-position:100% 67%}
   100%{background-position:0% 34%}
-} */
+}
 
 
 
 /* samolot */
-/* .samolot_kontener {
+.samolot_kontener {
   position:absolute;
   top: 100px;
   left: 300px;
   width: 500px;
   height: 80px;
   background-color: lightgrey;
-  animation: obrot 9s ease infinite;
+  animation: obrot_i_przemieszczenie 9s ease infinite;
 }
 
-@keyframes obrot {
+@keyframes obrot_i_przemieszczenie {
   0%{left: -1000px; transform:rotate(0deg);}
   25%{transform:rotate(3deg);}
   50%{left: 300px;}
   75% {transform:rotate(-2deg);}
   100%{left: 1600px; transform:rotate(0deg);}
 }
-
-@keyframes obrot {
-  0%{left: -1000px; transform:translate(0deg);}
-  25%{transform:rotate(3deg);}
-  50%{left: 300px;}
-  75% {transform:rotate(-2deg);}
-  100%{left: 1600px; transform:rotate(0deg);}
-} */
